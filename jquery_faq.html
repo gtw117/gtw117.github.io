@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: red;
+        }
+        .visible {
+        	display: block;
+        }
+        .invisible {
+        	display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>National Parks FAQ</h1>
+    <div class="centered important">
+        <h3>NOTICE to park inhabitants</h3>
+        <p>This is an important message!</p>
+        <h3 id='toggleparkone'>PARK ONE</h3>
+        <ul id='parkone'>
+        	<li>fact 1</li>
+        	<li>fact 2</li>
+			<li>fact 3</li>
+			<li>fact 4</li>
+        </ul>
+         <h3 id='toggleparktwo'>PARK TWO</h3>
+        <ul id='parktwo'>
+        	<li>fact 1</li>
+        	<li>fact 2</li>
+			<li>fact 3</li>
+			<li>fact 4</li>
+        </ul>
+         <h3 id='toggleparkthree'>PARK THREE</h3>
+        <ul id='parkthree'>
+        	<li>fact 1</li>
+        	<li>fact 2</li>
+			<li>fact 3</li>
+			<li>fact 4</li>
+        </ul>
+        <button id="button">toggle</button>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important">This is also very important.</p>
+    <a href="#" id="highlight-important">SEE WHATS IMPORTANT</a>
+        <script src="js/jquery.js"></script>
+        <script>
+        "use strict";
+
+        $(document).ready(function() {
+        	var button = $('#button');
+        	var facts = $('invisible');
+
+        	button.click(function () {
+        		$('ul').each(function (index){
+        			$(this).children().first().css("font-size", "45pxs");
+        		});
+        	});
+        	$('li').click(function (event){
+        		$(this).parent().toggleClass('invisible');
+        	});
+        	$('#toggleparkone').click(function(){
+        		$('#parkone').fadeToggle();
+        	});
+        	$('#toggleparktwo').click(function(){
+        		$('#parktwo').fadeToggle();
+        	});
+        	$('#toggleparkthree').click(function(){
+        		$('#parkthree').fadeToggle();
+        	});
+
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').addClass('highlighted');
+            });
+            $('li').css('background-color', '#FF0');
+            $('li').parent().css('background-color', '#0F0');
+            $('li').each().css('font-wieght', 'bold');
+            $('li').parent().toggleclass('invisible');
+        });
+    </script>
+</body>
+</html>

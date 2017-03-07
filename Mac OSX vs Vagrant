@@ -1,0 +1,25 @@
+Mac OSX vs Vagrant
+# Big Picture
+requests happen when human clicks a link/submits a form in browser
+servers serve requests
+navigate the browser to http://codeup.dev/hello_world.html
+sending a request to that address for that resource
+server listens for requests to that host
+server figures out what to do
+# Mac OS X       
+file system
+Chrome or any browser
+Sublime Text
+~/vagrant-lamp/sites/codeup.dev
+~/vagrant-lamp/
+ansible
+Sequel Pro
+# vagrant VM
+virtualized Ubuntu linux install
+web server (NGINX)
+MySQL database
+server logs
+PHP - our server side programming language
+/vagrant/sites/codeup.dev
+composer
+artisan

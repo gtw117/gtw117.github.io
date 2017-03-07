@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<hmtl>
+	<head>
+		<meta charset="utf-8">
+		<title>My first html form </title>
+	</head>
+	<body>
+		<h2>Login Form</h2>
+		<form method="POST" action="http://requestb.in/14a5l1x1">
+			<p>
+				<label for="">username</label>
+				<input id="username" name="username" type="text" placeholder="Enter username here">
+			</p>
+			<p> 
+				<label for="password">password</label>
+				<input id="password" name="password" type="password" placeholder="Enter password here">
+			</p>
+			<p>
+				<button type="submit">Login</button>
+			</p>
+		</form>
+		<h2>Compose an Email</h2>
+		<form method="POST" action="http://requestb.in/14a5l1x1">
+			<p>
+				<label for="subject">subject</label>
+				<input id="subject" name="subject" type="text">
+			</p>
+			<p>
+				<label for="body">body</label>
+				<textarea id="body" name="body" rows="5" cols="40"></textarea>
+			</p>
+			<p>
+				<label for="save a copy to sent folder">save a copy to sent folder</label>
+				<input type="checkbox" id="save a copy to sent folder" name="save a copy to sent folder" value="yes" checked>
+			<p>
+				<button type="submit">send</button>
+			</p>
+		</form>
+		<h2>multiple choice test</h2>
+		<form method="POST" action="http://requestb.in/14a5l1x1">
+			<p>What color is the sky primarily?</p>
+			<label>
+				<input type="radio" name="q1" value="yellow">yellow
+			</label>
+			<label>
+				<input type="radio" name="q1" value="blue">blue
+			</label>
+			<label>
+				<input type="radio" name="q1" value="green">green
+			</label>
+			<p>What color are car tires</p>
+			<label>
+				<input type="radio" name="q2" value="orange">orange
+			</label>
+			<label>
+				<input type="radio" name="q2" value="gray">gray
+			</label>
+			<label>
+				<input type="radio" name="q2" value="black">black
+			</label>
+			<p>What are parts of a computer?</p>
+			<label>
+				<input type="checkbox" name="q3a" value="motherboard">motherboard
+			</label>
+			<label>
+				<input type="checkbox" name="q3b" value="psu">psu
+			</label>
+			<label>
+				<input type="checkbox" name="q3c" value="bios battery">bios battery
+			</label>
+			<p>
+			<label for="activities">What are human activities </label>
+			<select id="activities" name="activities[]" multiple>
+			    <option value="eat">eat</option>
+			    <option value="sleep">sleep</option>
+			    <option value="breathe">breathe</option>
+			</select>
+			</p>
+			<p>
+				<button type="submit">submit final answers</button>
+			</p>	
+		</form>
+		<h2>Select Testing</h2>
+		<form method="POST" action="http://requestb.in/14a5l1x1">
+
+			<label for="human?">are you human </label>
+			<select id="human?" name="human?">
+			    <option value="1">yes</option>
+			    <option value="0" selected>no</option>
+			</select>
+
+			<p>
+				<button type="submit">submit final answers</button>
+			</p>
+	</body>
+
+</html>
+<!-- use requestb.in NOTE: you will have to update "action" in FORMS -->
+ 

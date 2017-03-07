@@ -1,0 +1,43 @@
+h1 {
+
+}
+
+.box {
+	border: 1px solid black;
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+#boxred {
+	background-color: red;
+}
+
+#boxorange {
+	background-color: orange;
+	margin-left: 30px;
+}
+
+#boxyellow {
+	background-color: yellow;
+	margin-left: 60px;
+}
+
+#boxgreen {
+	background-color: green;
+	margin-left: 90px;
+}
+
+#boxblue {
+	background-color: blue;
+	margin-left: 120px;
+}
+
+#boxviolet {
+	background-color: violet;
+	margin-left: 150px;
+}
+

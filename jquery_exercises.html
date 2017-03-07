@@ -1,0 +1,29 @@
+<!-- watch out for the back slash before js/jquery.js -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example jQuery Page</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        "use strict";
+
+        $(document).ready(function() {
+            $('#codeup').click(function() {
+                $(this).css('background-color', 'red')
+                alert('h1 with id "codeup" was clicked');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="codeup">Hello Codeup</h1>
+    <h2>blah bla blah</h2>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ol>
+</body>
+</html>

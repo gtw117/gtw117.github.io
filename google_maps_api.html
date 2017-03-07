@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+            position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- div to hold map -->
+    <div id="map-canvas"></div>
+
+    <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF2Ke_Zd_MlpFiNhwEGoA6nnkAR-NIEQg"></script>
+
+    <!-- Script to show address on map -->
+    <script type="text/javascript">
+    (function() {
+        "use strict";
+		var mapOptions = {
+		    // Set the zoom level
+		    zoom: 19,
+
+		    // This sets the center of the map at our location
+		    center: {
+		        lat:  29.426791,
+		        lng: -98.489602
+		    },
+
+		    // Show this map in satellite view
+		    mapTypeId: google.maps.MapTypeId.SATELLITE
+		}
+		// Create lat and long for our marker position
+		var codeup = { lat: 29.426791, lng: -98.489602 };
+
+		// Add the marker to our existing map
+		var marker = new google.maps.Marker({
+		    position: codeup,
+		    map: map
+		});
+		// Render the map
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		    })();
+    </script>
+</body>
+
+<!-- Google maps  JavaScript API
+
+AIzaSyAF2Ke_Zd_MlpFiNhwEGoA6nnkAR-NIEQg -->
